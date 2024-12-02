@@ -1,0 +1,74 @@
+# Bytecode do Python e caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Diretórios de cache
+*.cache
+*.egg-info
+.eggs/
+*.log
+*.pid
+*.gz
+*.zip
+
+# Configurações do ambiente virtual (virtualenv)
+venv/
+env/
+ENV/
+.virtualenv/
+Pipfile.lock
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Configurações de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e relatórios de depuração
+storage/logs/*.log
+
+*.log
+*.out
+*.err
+debug.log
+
+# Arquivos de configurações sensíveis
+.env
+.env.*
+
+# Cobertura de testes (gerado pelo pytest, coverage, etc.)
+htmlcov/
+.coverage
+*.cover
+.cache
+nosetests.xml
+coverage.xml
+
+# Diretórios de build
+build/
+dist/
+*.egg
+*.wheel
+
+# Arquivos do banco de dados SQLite (se aplicável)
+*.sqlite3
+
+# Arquivos gerados pela documentação
+docs/_build/
+
+# Arquivos temporários e de backup
+*.bak
+*.tmp
+*.old
+*.orig
+
+# Módulos instalados localmente
+*.lib
+*.bak
+*.manifest
+*.spec
