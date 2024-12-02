@@ -27,3 +27,5 @@ class UserService:
 
     async def delete(self, session: AsyncSession, user_id: int):
         return await user_repository.delete(session, user_id)
+
+          
