@@ -25,7 +25,7 @@ print(f"Conectando ao banco de dados {DATABASE_NAME} com usuário {DATABASE_USER
 #DATABASE_URL = "postgresql+asyncpg://postgres:soares@localhost:5432/picoles"
 DATABASE_URL = f"postgresql+asyncpg://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}"
 
-engine = create_async_engine(DATABASE_URL, echo=True)
+engine = create_async_engine(DATABASE_URL, echo=False) #echo ref aos logs do sqlalchemy
 async_session = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
 Base = declarative_base()
 
