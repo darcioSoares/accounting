@@ -2,11 +2,15 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.schemas.user import UserSchema
 from app.models.user import UserModel
 from app.repositories.user_repository import UserRepository
+import logging
 
 user_repository = UserRepository()
 
 class UserService:
     async def get_all(self, session: AsyncSession):
+       
+        nome: str = "Darcio"
+        logging.info(f"Rota principal acessada. {nome}")
         return await user_repository.get_all(session)
 
     async def get_by_id(self, session: AsyncSession, user_id: int):
