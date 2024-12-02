@@ -20,13 +20,4 @@ def setup_logging():
         ]
     )
 
-logging.getLogger("sqlalchemy.engine").setLevel(logging.ERROR)
 
-# from config_redis import redis_client
-
-# # Salvar um valor no Redis
-# redis_client.set("chave", "valor")
-
-# # Buscar o valor salvo
-# valor = redis_client.get("chave")
-# print(f"O valor de 'chave' é: {valor}")
