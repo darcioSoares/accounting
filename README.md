@@ -1,3 +1,9 @@
+
+
+uvicorn main:app --reload
+python3 create_tables
+
+
 .
 ├──             
 ├── core/                   # pasta core com config
@@ -15,3 +21,4 @@
 ├── criar_tabelas.py        # Script para criar tabelas
 ├── main.py                 # Ponto de entrada da aplicação
 └── .env                    # Variáveis de ambiente (opcional)
+
